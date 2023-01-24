@@ -1,0 +1,28 @@
+name: Run
+on:
+  workflow_dispatch:
+    inputs:
+      date:
+  schedule:
+    - cron: '0 16 2 * *'
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Run
+        run: |
+          if [[ -z $DATE ]]; then
+            DATE=`date -d "$date -1 month" +%Y/%m`
+          fi
+          curl -X POST -Lo $DATE.json --create-dirs ${{ secrets.API }}
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add .
+          git commit -m "$DATE"
+          git push
+        env:
+          DATE: ${{ inputs.date }}

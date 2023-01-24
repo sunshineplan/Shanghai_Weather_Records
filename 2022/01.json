@@ -1,0 +1,9 @@
+[{"date":"2022-01-23","maxtemp_c":10.3,"mintemp_c":9.1,"avgtemp_c":9.9,"maxwind_kph":15.8,"totalprecip_mm":0.1,"avgvis_km":9,"avghumidity":91,"weather":"Overcast"},
+{"date":"2022-01-24","maxtemp_c":8.2,"mintemp_c":7.5,"avgtemp_c":7.9,"maxwind_kph":13,"totalprecip_mm":1,"avgvis_km":8,"avghumidity":85,"weather":"Light drizzle"},
+{"date":"2022-01-25","maxtemp_c":6.8,"mintemp_c":5.9,"avgtemp_c":6.4,"maxwind_kph":9.7,"totalprecip_mm":0.8,"avgvis_km":8,"avghumidity":83,"weather":"Light drizzle"},
+{"date":"2022-01-26","maxtemp_c":7.5,"mintemp_c":5.8,"avgtemp_c":6.9,"maxwind_kph":13,"totalprecip_mm":1,"avgvis_km":9,"avghumidity":76,"weather":"Patchy rain possible"},
+{"date":"2022-01-27","maxtemp_c":6.4,"mintemp_c":4.3,"avgtemp_c":5.9,"maxwind_kph":18,"totalprecip_mm":2.7,"avgvis_km":4.9,"avghumidity":88,"weather":"Light drizzle"},
+{"date":"2022-01-28","maxtemp_c":7.3,"mintemp_c":4.4,"avgtemp_c":6.2,"maxwind_kph":16.6,"totalprecip_mm":1,"avgvis_km":7,"avghumidity":70,"weather":"Light drizzle"},
+{"date":"2022-01-29","maxtemp_c":6.4,"mintemp_c":3.6,"avgtemp_c":5,"maxwind_kph":13,"totalprecip_mm":0.6,"avgvis_km":9.8,"avghumidity":69,"weather":"Light sleet showers"},
+{"date":"2022-01-30","maxtemp_c":11.8,"mintemp_c":3.7,"avgtemp_c":7.8,"maxwind_kph":12.6,"totalprecip_mm":0,"avgvis_km":10,"avghumidity":55,"weather":"Overcast"},
+{"date":"2022-01-31","maxtemp_c":8.6,"mintemp_c":3.4,"avgtemp_c":6.7,"maxwind_kph":7.2,"totalprecip_mm":0,"avgvis_km":10,"avghumidity":54,"weather":"Overcast"}]

@@ -18,7 +18,7 @@ jobs:
           if [[ -z $DATE ]]; then
             DATE=`date -d "$date -1 month" +%Y/%m`
           fi
-          curl -X POST -Lo $DATE.json --create-dirs ${{ secrets.API }}
+          curl -X POST -Lo ${DATE::3}0s/$DATE.json --create-dirs ${{ secrets.API }}
           git config user.name github-actions
           git config user.email github-actions@github.com
           git add .

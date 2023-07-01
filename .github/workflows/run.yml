@@ -19,8 +19,8 @@ jobs:
             DATE=`date -d "$date -1 month" +%Y/%m`
           fi
           curl -X POST -Lo ${DATE::3}0s/$DATE.json --create-dirs ${{ secrets.API }}
-          git config user.name github-actions
-          git config user.email github-actions@github.com
+          git config user.name "GitHub Actions"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add .
           git commit -m "$DATE"
           git push

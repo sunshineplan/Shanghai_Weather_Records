@@ -11,7 +11,7 @@ jobs:
       pull-requests: write
       contents: write
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - uses: nick-invision/retry@v2
         with:
           timeout_minutes: 60

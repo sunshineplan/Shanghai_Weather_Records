@@ -19,6 +19,7 @@ jobs:
       - name: Update Typhoon
         id: update
         run: |
+          git lfs pull
           go run . typhoon
           git config user.name "GitHub Actions"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"

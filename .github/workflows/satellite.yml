@@ -19,6 +19,7 @@ jobs:
       - name: Update Satellite
         id: update
         run: |
+          git lfs pull
           go run . satellite
           git config user.name "GitHub Actions"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"

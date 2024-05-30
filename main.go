@@ -171,7 +171,7 @@ func getTimes(path, format string) (ts []time.Time) {
 	if err != nil {
 		panic(err)
 	}
-	for i := time.Duration(1); i <= 24; i++ {
+	for i := time.Duration(1); i <= 12; i++ {
 		if t := last.Add(-i * 10 * time.Minute); slices.IndexFunc(res, func(s string) bool {
 			return strings.HasSuffix(s, t.Format(format)+".png")
 		}) == -1 {

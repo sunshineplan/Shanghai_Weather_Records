@@ -25,8 +25,8 @@ github.com/sunshineplan/chrome v1.1.11 h1:wQETSolkfj4Z0aA0I6jkX5wUC/mG+d4cPt+zDM
 github.com/sunshineplan/chrome v1.1.11/go.mod h1:T6BhKe32SqLd2/i4DdBTbmM+2UKn17l4F2r17nltxSg=
 github.com/sunshineplan/utils v0.1.66 h1:YwIuVQxmaL0bEnEKHU64pseCC18w2MZVtyrmY4VFOew=
 github.com/sunshineplan/utils v0.1.66/go.mod h1:QMe2vCEFq9VliPac8WfXndi5jP0ZrPHus8wvJlgBy5M=
-github.com/sunshineplan/weather v1.0.25 h1:VOJ3gzHWsKk63qVnQoVb2meHuZ8fniJuPuC8s5WCHmM=
-github.com/sunshineplan/weather v1.0.25/go.mod h1:93TCm5oCLCT26CmvTBymnSyQ+UWZQUSiUy8robkD0XQ=
+github.com/sunshineplan/weather v1.0.26 h1:17zjavySLhWVKh+z15qarKfB5DOvUtSDpsmTYROOUeY=
+github.com/sunshineplan/weather v1.0.26/go.mod h1:93TCm5oCLCT26CmvTBymnSyQ+UWZQUSiUy8robkD0XQ=
 golang.org/x/sys v0.6.0/go.mod h1:oPkhp1MJrh7nUepCBck5+mAzfO9JrbApNNgaTdGDITg=
 golang.org/x/sys v0.16.0 h1:xWw16ngr6ZMtmxDyKyIgsE93KNKz5HKmMa3b8ALHidU=
 golang.org/x/sys v0.16.0/go.mod h1:/VUhepiaJMQUp4+oa/7Zr1D23ma6VTLIYjOOTFZPUcA=

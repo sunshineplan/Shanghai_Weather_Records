@@ -1,0 +1,43 @@
+name: Satellite
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0,30 * * * *'
+
+jobs:
+  satellite:
+    runs-on: macos-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: stable
+
+      - name: Update Satellite
+        id: update
+        run: |
+          go run . satellite
+          git config user.name "GitHub Actions"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add .
+          git diff-index --quiet HEAD || echo "new_data=1" >> $GITHUB_OUTPUT
+          echo "msg=satellite-$(TZ=PRC date +'%Y%m%d%H%M')" >> $GITHUB_OUTPUT
+
+      - name: Commit
+        if: steps.update.outputs.new_data == 1
+        run: |
+          git commit -m ${{ steps.update.outputs.msg }}
+
+      - name: Push
+        if: steps.update.outputs.new_data == 1
+        uses: nick-invision/retry@v3
+        with:
+          timeout_minutes: 5
+          max_attempts: 3
+          retry_wait_seconds: 60
+          command: |
+            git pull --no-rebase
+            git push

@@ -1,0 +1,23 @@
+name: Dependabot
+
+on:
+  pull_request_target:
+
+jobs:
+  merge:
+    if: ${{ github.actor == 'dependabot[bot]' }}
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: nick-invision/retry@v3
+        with:
+          timeout_minutes: 60
+          max_attempts: 5
+          retry_wait_seconds: 60
+          retry_on: error
+          command: gh pr merge --auto --squash ${{ github.event.pull_request.html_url }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

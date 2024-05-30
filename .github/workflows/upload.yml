@@ -1,0 +1,40 @@
+name: Upload
+on:
+  workflow_dispatch:
+    inputs:
+      date:
+        description: 'Date'
+        default: ''
+  schedule:
+    - cron: '0 16 5 * *'
+
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Run
+        run: |
+          if [[ -z $DATE ]]; then
+            DATE=`date -d "$date -1 month" +%Y/%m`
+          fi
+          curl -X POST -Lo ${DATE::3}0s/$DATE.json --create-dirs ${{ secrets.API }}?month=${DATE//\//-}
+          git config user.name "GitHub Actions"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add .
+          git commit -m "Upload $DATE"
+        env:
+          DATE: ${{ inputs.date }}
+
+      - name: Push
+        uses: nick-invision/retry@v3
+        with:
+          timeout_minutes: 5
+          max_attempts: 3
+          retry_wait_seconds: 60
+          command: |
+            git pull --no-rebase
+            git push
+

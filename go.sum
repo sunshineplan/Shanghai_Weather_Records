@@ -21,12 +21,12 @@ github.com/mailru/easyjson v0.7.7 h1:UGYAvKxe3sBsEDzO8ZeWOSlIQfWFlxbzLZe7hwFURr0
 github.com/mailru/easyjson v0.7.7/go.mod h1:xzfreul335JAWq5oZzymOObrkdz5UnU4kGfJJLY9Nlc=
 github.com/orisano/pixelmatch v0.0.0-20220722002657-fb0b55479cde h1:x0TT0RDC7UhAVbbWWBzr41ElhJx5tXPWkIHA2HWPRuw=
 github.com/orisano/pixelmatch v0.0.0-20220722002657-fb0b55479cde/go.mod h1:nZgzbfBr3hhjoZnS66nKrHmduYNpc34ny7RK4z5/HM0=
-github.com/sunshineplan/chrome v1.1.11 h1:wQETSolkfj4Z0aA0I6jkX5wUC/mG+d4cPt+zDMAG4is=
-github.com/sunshineplan/chrome v1.1.11/go.mod h1:T6BhKe32SqLd2/i4DdBTbmM+2UKn17l4F2r17nltxSg=
+github.com/sunshineplan/chrome v1.1.14 h1:+Jiy8CzHyKh+u8F5eLBJAiIV0aLA38x0uz31HRD+99M=
+github.com/sunshineplan/chrome v1.1.14/go.mod h1:T6BhKe32SqLd2/i4DdBTbmM+2UKn17l4F2r17nltxSg=
 github.com/sunshineplan/utils v0.1.66 h1:YwIuVQxmaL0bEnEKHU64pseCC18w2MZVtyrmY4VFOew=
 github.com/sunshineplan/utils v0.1.66/go.mod h1:QMe2vCEFq9VliPac8WfXndi5jP0ZrPHus8wvJlgBy5M=
-github.com/sunshineplan/weather v1.0.26 h1:17zjavySLhWVKh+z15qarKfB5DOvUtSDpsmTYROOUeY=
-github.com/sunshineplan/weather v1.0.26/go.mod h1:93TCm5oCLCT26CmvTBymnSyQ+UWZQUSiUy8robkD0XQ=
+github.com/sunshineplan/weather v1.0.30 h1:Ph/A0MRoTar3ZodGsNJ93+VI5IshvAcu1lqlzo1RhPQ=
+github.com/sunshineplan/weather v1.0.30/go.mod h1:kdUc5YOb4jpQHEklCVWauYCn2Uvm4ybxLs5EqXiX4ro=
 golang.org/x/sys v0.6.0/go.mod h1:oPkhp1MJrh7nUepCBck5+mAzfO9JrbApNNgaTdGDITg=
 golang.org/x/sys v0.16.0 h1:xWw16ngr6ZMtmxDyKyIgsE93KNKz5HKmMa3b8ALHidU=
 golang.org/x/sys v0.16.0/go.mod h1:/VUhepiaJMQUp4+oa/7Zr1D23ma6VTLIYjOOTFZPUcA=

@@ -4,7 +4,7 @@ go 1.22
 
 require (
 	github.com/kettek/apng v0.0.0-20220823221153-ff692776a607
-	github.com/sunshineplan/weather v1.0.30
+	github.com/sunshineplan/weather v1.0.31
 )
 
 require (

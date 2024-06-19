@@ -4,7 +4,7 @@ go 1.22
 
 require (
 	github.com/kettek/apng v0.0.0-20220823221153-ff692776a607
-	github.com/sunshineplan/weather v1.0.31
+	github.com/sunshineplan/weather v1.0.32
 )
 
 require (
@@ -16,7 +16,7 @@ require (
 	github.com/gobwas/ws v1.3.2 // indirect
 	github.com/josharian/intern v1.0.0 // indirect
 	github.com/mailru/easyjson v0.7.7 // indirect
-	github.com/sunshineplan/chrome v1.1.14 // indirect
-	github.com/sunshineplan/utils v0.1.66 // indirect
+	github.com/sunshineplan/chrome v1.1.17 // indirect
+	github.com/sunshineplan/utils v0.1.68 // indirect
 	golang.org/x/sys v0.16.0 // indirect
 )
